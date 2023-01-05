@@ -14,7 +14,7 @@ import {getFirestore} from 'firebase/firestore'
 const firebaseConfig = {
 
     apiKey: "AIzaSyC1L4P1ki9j_NnXhcs_qA6jL31y_x7w5Iw",
-    authDomain: "https://ruben-jim.github.io/chat/",
+    authDomain: "superchat-ae1e0.firebaseapp.com",
     projectId: "superchat-ae1e0",
     storageBucket: "superchat-ae1e0.appspot.com",
     messagingSenderId: "123810491404",
