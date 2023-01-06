@@ -17,16 +17,16 @@ function App() {
   return (
     <div className={style.appContainer}>
       <section className='{style.sectionContainer}'>
-      <Helmet>
-        <meta charSet="utf-8"/>
-        <title>My Title</title>
-        <link rel="canonical" href="http://mysite.com/example"/>
-        <meta name="description" content="Testing icon and title" />
-
-      </Helmet>
+      
         {/* Navbar */}
         <Navbar />
         {user ? <Chat /> : null}
+        <Helmet>
+          <meta charSet="utf-8"/>
+          <title>My Title</title>
+          <link rel="canonical" href="http://mysite.com/example"/>
+          <meta name="description" content="Testing icon and title" />
+        </Helmet>
       </section>
     </div>
   );
