@@ -16,6 +16,7 @@ function App() {
   //  console.log(user)
   return (
     <div className={style.appContainer}>
+      <section className='{style.sectionContainer}'>
       <Helmet>
         <meta charSet="utf-8"/>
         <title>My Title</title>
@@ -23,7 +24,6 @@ function App() {
         <meta name="description" content="Testing icon and title" />
 
       </Helmet>
-      <section className='{style.sectionContainer}'>
         {/* Navbar */}
         <Navbar />
         {user ? <Chat /> : null}
