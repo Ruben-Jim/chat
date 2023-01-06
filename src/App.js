@@ -19,12 +19,13 @@ function App() {
   //  console.log(user)
   return (
     <div className={style.appContainer}>
-      <section className='{style.sectionContainer}'>
-        <Helmet>
+      <Helmet>
           <meta charSet="utf-8"/>
           <title>FireCon Chat</title>
           <link rel="canonical" href="http://mysite.com/example"/>
-        </Helmet>
+      </Helmet>
+      <section className='{style.sectionContainer}'>
+        
 
         {/* Navbar */}
         <Navbar />
