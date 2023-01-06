@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Chat from './components/Chat';
+import {Helmet} from "react-helmet";
 
 import { auth } from './firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -15,6 +16,13 @@ function App() {
   //  console.log(user)
   return (
     <div className={style.appContainer}>
+      <Helmet>
+        <meta charSet="utf-8"/>
+        <title>My Title</title>
+        <link rel="canonical" href="http://mysite.com/example"/>
+        <meta name="description" content="Testing icon and title" />
+
+      </Helmet>
       <section className='{style.sectionContainer}'>
         {/* Navbar */}
         <Navbar />
