@@ -3,6 +3,8 @@ import Navbar from './components/Navbar';
 import Chat from './components/Chat';
 import { auth } from './firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import {Helmet} from "react-helmet";
+
 
 
 const style = {
@@ -16,11 +18,14 @@ function App() {
   const [user] = useAuthState(auth);
   //  console.log(user)
   return (
-    
     <div className={style.appContainer}>
       <section className='{style.sectionContainer}'>
-        
-      
+        <Helmet>
+          <meta charSet="utf-8"/>
+          <title>FireCon Chat</title>
+          <link rel="canonical" href="http://mysite.com/example"/>
+        </Helmet>
+
         {/* Navbar */}
         <Navbar />
         {user ? <Chat /> : null}
